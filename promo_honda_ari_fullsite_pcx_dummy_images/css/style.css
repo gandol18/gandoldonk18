@@ -1,0 +1,106 @@
+
+/* Background PCX with overlay */
+body {
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(192,0,0,0.35)),
+              url('../images/pcx.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+body {font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;margin:0;padding:0;background:#111;color:#eee;}
+header {background:linear-gradient(90deg,#c00,#000);color:#fff;text-align:center;padding:30px 20px 15px;position:sticky;top:0;z-index:10;}
+header img {height:100px;margin:0 15px;vertical-align:middle;}
+header h1 {margin:10px 0 5px;font-size:28px;font-weight:bold;}
+header p {margin:0;font-size:16px;}
+header .alamat {margin-top:5px;font-size:14px;color:#ddd;}
+nav {background:#000;display:flex;justify-content:center;align-items:center;padding:12px;position:relative;}
+nav .menu {display:flex;gap:20px;}
+nav a {color:#fff;text-decoration:none;font-weight:bold;transition:color 0.3s;}
+nav a:hover,nav a.active {color:#c00;}
+.menu-toggle {display:none;font-size:28px;color:#fff;cursor:pointer;}
+@media(max-width:768px){nav{justify-content:space-between;}nav .menu{display:none;flex-direction:column;background:#111;position:absolute;top:100%;left:0;width:100%;padding:10px 0;}nav .menu.show{display:flex;}.menu-toggle{display:block;}}
+.why-nsc,.fasilitas,.produk-section,.promo-section,.contact{background:#1a1a1a;color:#fff;padding:40px 20px;margin:40px auto;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.6);max-width:1000px;text-align:center;}
+.why-nsc h2,.fasilitas h2,.produk-section h2,.promo-section h2,.contact h2{color:#c00;font-size:28px;margin-bottom:25px;}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.reason{background:#222;padding:20px;border-radius:10px;transition:transform 0.3s ease,box-shadow 0.3s ease;}
+.reason:hover{transform:translateY(-5px);box-shadow:0 6px 16px rgba(192,0,0,0.6);}
+.reason h3{color:#fff;margin-bottom:10px;font-size:18px;}
+.reason p{font-size:14px;color:#ddd;}
+.produk-grid,.promo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px;}
+.produk-grid img,.promo-grid img{width:100%;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.6);transition:transform 0.3s ease;}
+.produk-grid img:hover,.promo-grid img:hover{transform:scale(1.05);}
+.contact .wa-btn{display:inline-block;background:#c00;color:#fff;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:15px;transition:background 0.3s,transform 0.3s;}
+.contact .wa-btn:hover{background:#900;transform:scale(1.05);}
+footer{background:#000;color:#888;text-align:center;padding:20px;margin-top:30px;font-size:14px;}
+
+.container {margin: 40px auto;}
+.section {margin: 60px 0;}
+
+/* Perapian Layout dan Typography */
+body {line-height:1.6; font-size:16px;}
+header h1 {font-size:32px; margin-bottom:10px;}
+header p {font-size:15px; margin:4px 0;}
+nav {gap:30px; padding:14px;}
+nav a {padding:6px 12px; border-radius:6px; transition:all .3s;}
+nav a:hover {background:#222; color:#c00;}
+.container {max-width:1200px; margin:50px auto; padding:0 15px;}
+.section h2 {font-size:24px; margin-bottom:15px;}
+.section p, .section ul {font-size:16px;}
+.grid {gap:25px;}
+.card {padding:18px; box-shadow:0 4px 10px rgba(0,0,0,0.4);}
+.card h3 {margin-top:0; font-size:18px; color:#fff;}
+footer {font-size:14px;}
+
+/* Responsive */
+@media (max-width:768px) {
+  header h1 {font-size:24px;}
+  .section h2 {font-size:20px;}
+  nav {flex-wrap:wrap; gap:15px;}
+}
+
+/* Hero section */
+.hero {
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  color:#fff; text-align:center; padding:60px 20px; position:relative;
+}
+.hero-overlay {
+  background:rgba(0,0,0,0.6); padding:40px; border-radius:12px;
+  display:inline-block; max-width:800px;
+}
+.hero img {height:80px; margin:10px;}
+.hero h1 {font-size:36px; margin:10px 0;}
+.hero p {margin:6px 0;}
+.cta {margin-top:20px;}
+.btn {
+  display:inline-block; background:#c00; color:#fff; padding:12px 20px;
+  border-radius:6px; margin:5px; text-decoration:none; font-weight:bold;
+  transition:all .3s;
+}
+.btn:hover {background:#900;}
+.btn-outline {background:transparent; border:2px solid #c00;}
+.btn-outline:hover {background:#c00; color:#fff;}
+.highlights .card, .fasilitas .card {text-align:center;}
+.highlights i, .fasilitas i {color:#c00; margin-bottom:10px;}
+
+.center-section { text-align:center; }
+.grid-item { display:inline-block; width:30%; margin:1%; vertical-align:top; }
+.form-page { max-width:600px; margin:40px auto; }
+.form label { display:block; margin:10px 0 5px; }
+.form input, .form textarea {
+  width:100%; padding:10px; border-radius:6px; border:1px solid #ccc; margin-bottom:15px;
+}
+.form button { background:#c00; color:#fff; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; }
+.form button:hover { background:#900; }
+
+.grid-horizontal {
+  display:inline-block;
+  width:30%;
+  margin:1%;
+  vertical-align:top;
+}
+.grid-horizontal img {
+  width:100%;
+  border-radius:8px;
+}
+
+.grid-3 { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin:20px 0; }
+.grid-3 .card { background:#1a1a1a; color:#fff; padding:20px; border-radius:10px; flex:1 1 250px; box-shadow:0 4px 10px rgba(0,0,0,0.5); }
+.grid-3 .card h3 { color:#c00; margin-bottom:10px; }
